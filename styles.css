@@ -300,4 +300,110 @@
     text-align: center;
     padding: 20px 0;
   }
-  
+  /* RESPONSIVE DESIGN */
+
+/* Tablet Devices (max-width: 991px) */
+@media (max-width: 991px) {
+  .hero-content,
+  .about-content,
+  .skills-detail-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img,
+  .profile-img,
+  .skills-image img {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .services-cards,
+  .portfolio-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 20px;
+  }
+
+  .statistics {
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stat {
+    flex: 1 1 40%;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .services-cards,
+  .portfolio-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-grid img {
+    width: 100%;
+  }
+
+  .brands-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .brands-logos img {
+    height: 40px;
+  }
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .stat h3 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
